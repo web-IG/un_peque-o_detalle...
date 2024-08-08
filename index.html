@@ -3,154 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un Mensaje Especial</title>
+    <title>Carta a Damaris</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #000000, #87CEEB);
-            color: #ffffff;
-            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(to bottom right, #ff9a9e, #fecfef);
             margin: 0;
             padding: 0;
-            height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
-            overflow: hidden;
-        }
-        .container {
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 90%;
-            width: 100%;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-            text-align: left;
-            box-sizing: border-box;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #87CEEB;
-            border-bottom: 3px solid #ffffff;
-            display: inline-block;
-            padding-bottom: 10px;
-            word-wrap: break-word;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-        .signature {
-            margin-top: 20px;
-            font-style: italic;
-            color: #87CEEB;
-            font-size: 1.1em;
-        }
-        .audio-controls {
-            margin-top: 20px;
-        }
-        .audio-controls button {
-            background-color: #87CEEB;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            padding: 12px 25px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            margin: 5px;
-        }
-        .audio-controls button:hover {
-            background-color: #1e90ff;
-            transform: scale(1.05);
-        }
-        .audio-controls button:active {
-            background-color: #1c86ee;
-            transform: scale(0.95);
-        }
-        .audio-controls button:focus {
-            outline: none;
+            align-items: center;
+            min-height: 100vh;
+            color: #4a4a4a;
         }
 
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d83f87;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .signature p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
             .container {
                 padding: 15px;
-                border-radius: 10px;
+                margin: 10px;
             }
+
             h1 {
                 font-size: 2em;
             }
-            p {
-                font-size: 1em;
-            }
-            .signature {
-                font-size: 1em;
-            }
-            .audio-controls button {
-                padding: 10px 20px;
-                font-size: 0.9em;
-            }
-        }
 
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-                border-radius: 8px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
             p {
-                font-size: 0.9em;
-            }
-            .signature {
-                font-size: 0.9em;
-            }
-            .audio-controls button {
-                padding: 8px 16px;
-                font-size: 0.8em;
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Un Mensaje Especial</h1>
-        <p>Querida Damaris</p>
-        <p>En este momento, quiero tomarme un momento para expresar lo importante que eres para mí. Aunque nuestras vidas estén tomando caminos diferentes, siempre tendrás un lugar especial en mi corazón.</p>
-        <p>Estoy muy orgulloso de ti y quiero que sepas que no necesitas ser diferente conmigo. Puedes contar conmigo como tu lugar seguro, un hombro donde apoyarte, o un sitio para desahogarte. He aprendido a estar en silencio, a darte tu espacio y a entenderte completamente.</p>
-        <p>Quiero que sepas que aquí sigo, y siempre podrás contar conmigo. No cambies, eres perfecta tal y como eres, y estoy orgulloso de ti.</p>
-        <p class="signature">Con cariño Dilan</p>
-
-        <div class="audio-controls">
-            <button id="play-btn">Reproducir Música</button>
-            <button id="pause-btn" style="display:none;">Pausar Música</button>
-        </div>
+        <h1>Carta a Damaris</h1>
+        <p>Hola Damaris,</p>
+        <p>No sé si te lo has preguntado, pero, ¿sabes por qué sigo aquí y amándote? Hemos pasado por tanto y ya ha pasado un tiempo. Te he acompañado la mayoría de tu adolescencia hasta ahora y he sido testigo de tus cambios y de cómo vas madurando día tras día. Como sabes, yo te amo y lo que te prometí, lo de casarnos, lo de tener una familia, lo de ser felices por siempre... Sigue firme mi palabra y sigo queriendo eso :)</p>
+        <p>¿Sabes por qué tengo todavía esa esperanza de que sí se va a dar? Bueno, como ya dije, pasamos mucho juntos y te conozco. Dirás que no, pero aunque a veces no lo quieras aceptar, sabes que sí. Ja, es curioso, casi cada noche llegan a mi mente los recuerdos y, ¿sabes cómo sé que sí se podrá dar otra vez? Recuerdo nuestro primer "te amo", los días que nos desvelábamos hablando, los días que jugábamos juntos. Era risa y amor, era sincero y hermoso. Fuimos mucho, también fuimos nuestro primer encuentro de intimidad hacia alguien y descubrimos eso entre los dos. Y no solo nos tuvimos confianza en la intimidad del cuerpo, también en la más importante, la sentimental y en la confianza. Confianza que nos permitió expresar secretos el uno al otro que nadie más sabe y nadie más sabrá. Fuimos uno, y aunque fue corto, fue sincero.</p>
+        <p>Y sabes, a veces creo que ese sentimiento en ti no se fue, solo se minimizó o pasó a segundo plano. A veces pienso que ese sentimiento te llega cuando estás sola o triste. Tú lo llamarás confusión y apego, pero en realidad es el amor que nunca se fue, solo se reprimió por el dolor y los problemas. ¿Sabes por qué pienso eso? Bueno, esa noche que tocamos temas profundos y nos dijimos los más íntimos secretos, cuando cambiamos de tema, no recuerdo bien qué fue lo que te dije, pero sé que tocó tu corazón. Porque de la nada dijiste "Ay, te amo", pero más expresivo y hermoso claro, y después te alegraste porque dijiste "Ya estoy sanando porque ese 'te amo' sí lo sentí, no sé, salió de la nada". Y te pusiste alegre y sentimental, y te dije "Me dejas ayudarte a sanar, mi amor, que no importa, yo te ayudaré, solo necesitas dejar que te ayude", y esa vez sí reconociste y aceptaste. Y fue cuando renació ese sentimiento. Por eso sigo, sé que está por ahí ese sentimiento, y aquí estoy yo con el mío. Te amo y aunque no te dejes amar ahora, si me das de nuevo tu corazón, prometo curar cada parte de él y hacerte feliz como sé porque te conozco, Damaris. No quiero compartir mis secretos, intimidad o confianza con nadie más.</p>
+        <p class="signature">Gracias por tanto.</p>
+        <p class="signature">Atentamente, Dilan, un chico sinceramente enamorado :)</p>
     </div>
-
-    <audio id="background-music">
-        <source src="musica.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
-
-    <script>
-        document.getElementById('play-btn').addEventListener('click', function() {
-            var audio = document.getElementById('background-music');
-            audio.play();
-            this.style.display = 'none';
-            document.getElementById('pause-btn').style.display = 'inline';
-        });
-
-        document.getElementById('pause-btn').addEventListener('click', function() {
-            var audio = document.getElementById('background-music');
-            audio.pause();
-            this.style.display = 'none';
-            document.getElementById('play-btn').style.display = 'inline';
-        });
-    </script>
 </body>
 </html>
